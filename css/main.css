@@ -306,3 +306,15 @@ textarea {
         page-break-after: avoid;
     }
 }
+/* STYLES FOR TEMP PAGE
+*/
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: white;
+}
+
+body {
+  background-color: black;
+}
