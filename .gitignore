@@ -1,0 +1,5 @@
+.htaccess
+*.psd
+*.ai
+.DS_Store
+.log
