@@ -311,8 +311,9 @@ textarea {
 h1 {
     position: absolute;
     top: 40%;
-    left: 25%;
+    left:33%;
     color: white;
+    margin-right:5em;
 }
 
 body {
