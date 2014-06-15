@@ -1,0 +1,27 @@
+body {
+@include container(show);
+
+}
+
+// CREATE GRID SYSTEM 
+// .container {
+//   @include container (show);
+//   @include susy-breakpoint(600px, 4) {
+//   @include container (show);
+//   }
+
+//   @include susy-breakpoint(900px, 10) {
+//   @include container (show);
+// }
+// }
+.preamble {
+	@include clearfix;
+	@include span(2 of 4);
+	@include push(1);
+	margin-top: 8em;
+
+}
+
+p:first-child {
+	font-size: 2em;
+}
