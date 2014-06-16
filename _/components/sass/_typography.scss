@@ -1,3 +1,53 @@
+// SIZE DECLARATIONS
+// =========================
+
+html { 
+     @include breakpoint (240px) {
+        font-size:40%; 
+    }
+    @include breakpoint (580px) {
+        font-size:50%; 
+    }
+    @include breakpoint (768px) {
+        font-size:56%; 
+    }
+    @include breakpoint (960px) {
+        font-size:62.5%; 
+    }
+} 
+body { font-size: 14px; font-size: 1.6rem; } /* =16px */
+h1   { font-size: 61px; font-size: 6.1036rem; /* =61px */
+     @include breakpoint (240px) {
+        font-size: 51px; font-size:5.1rem; 
+    }
+    @include breakpoint (580px) {
+        font-size: 61px; font-size:6.1036rem; 
+    }
+    } 
+h2   { font-size: 48px; font-size: 4.8829rem; } /* =48px */
+h3   { font-size: 39px; font-size: 3.9063; } /* =39px */
+h4   { font-size: 31px; font-size: 3.125rem; } /* =31px */
+h5   { font-size: 25px; font-size: 2.5rem; } /* =25px */
+h6   { font-size: 20px; font-size: 2rem; } /* =20px */
+p  { font-size: 17px; font-size: 1.7rem; 
+    line-height: 2.8rem;/* =16px */
+    @include breakpoint (240px) {
+        font-size: 20px; font-size: 2rem; 
+    }
+    @include breakpoint (580px) {
+        font-size: 17px; font-size: 1.7rem;
+    }
+    } 
+li { font-size: 14px; font-size: 1.333rem;/* =14px? */
+    @include breakpoint (240px) {
+        font-size: 2rem; 
+    }
+    @include breakpoint (580px) {
+        font-size: 1.6rem;
+    }
+
+ } 
+
 @font-face {
   font-family: 'fontawesome';
   src: url('../font/fontawesome.eot?79779215');
@@ -57,27 +107,25 @@
     color: #222;
 }
 
-html {
-    font-size: 17px;
-}
 
 body {
     font-family: "proxima-nova",sans-serif;
     color: $base-c;
-    background-color: #f5f5f5;
+    background-color: $bg1;
 }
 
 #page-header h1 {
     font-family: "p22-underground-sc",sans-serif;
-    font-size: 3rem; 
+    // font-size: 3rem; 
     text-align: center;
     margin: 1.3em 0 0 0;
     padding: 0;
+    letter-spacing: .09em;
 }
 
-#page-header h2, #page-header h2 ul {
+#page-header h5, #page-header h5 ul {
     font-family: "proxima-nova",sans-serif;
-    font-size: 2.4vw; 
+    // font-size: 2.4vw; 
     text-align: center;
     color: $second-c;
     margin-top: -1em;
@@ -85,6 +133,10 @@ body {
     letter-spacing: .09em;
 }
 
+.preamble blockquote {
+    font-size:26px; font-size: 2.6rem;
+    // border-right: 2px solid $base-c;
+}
 
 #page-header .icon {
     font-family: cdings; 
@@ -113,7 +165,7 @@ body {
     display: inline-block;
     // float:left;
     // margin-right:1em;
-    font-size: 1.1em; 
+    // font-size: 1.1em; 
     position: relative; 
 }
 
@@ -239,9 +291,13 @@ a:hover, a:hover:before {
     @include transition-duration(.3s);
 }
 
+#filmmaking span {font-weight:bold;}
 
-
-
+#terminology p:first-child {
+    color: $bg1;
+    text-align:right;
+    padding-right:5em;
+}
 
 /*
 @font-face {

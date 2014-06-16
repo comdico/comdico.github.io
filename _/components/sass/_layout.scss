@@ -1,5 +1,5 @@
 body {
-@include container(show);
+@include container();
 
 }
 
@@ -14,14 +14,45 @@ body {
 //   @include container (show);
 // }
 // }
-.preamble {
-	@include clearfix;
-	@include span(2 of 4);
-	@include push(1);
-	margin-top: 8em;
-
+#page-header {
+	z-index:1000;
+	// height:700px
 }
 
-p:first-child {
-	font-size: 2em;
+section {padding-bottom:3em; @include clearfix;}
+
+
+.preamble {
+	@include span(2 of 4);
+	@include push(1);
+	position:relative;
+}
+
+.preamble blockquote {
+	@include clearfix;
+	height:10.5em;
+	margin-top: 6em;
+	margin-right:0;
+	// position: fixed;
+	// bottom:5em;
+	// @include span(2 of 4);
+}
+.portrait {
+	@include span(1 of 4);
+	@include border-radius(5em);
+	width:8em;
+	border:.4em solid $base-c;
+	margin-left:3.8em;	
+}
+
+#bio {margin-top:3em;}
+
+#filmmaking {
+	// font-size: 1.1rem;
+	margin-top: 2em;
+	margin-bottom:5em;
+	@include span(2 of 4);		
+}
+#terminology {
+	height:1200px
 }
