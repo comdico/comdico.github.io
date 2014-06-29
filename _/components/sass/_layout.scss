@@ -1,5 +1,5 @@
 body {
-@include container();
+@include container(show);
 
 }
 
@@ -38,20 +38,16 @@ section {padding-bottom:3em; @include clearfix;}
 	// @include span(2 of 4);
 }
 .portrait {
-	@include span(1 of 4);
-	@include border-radius(5em);
-	width:8em;
-	border:.4em solid $base-c;
-	margin-left:3.8em;	
+	@include span(1 at 1 of 4);	
 }
 
 #bio {margin-top:3em;}
 
 #filmmaking {
 	// font-size: 1.1rem;
-	margin-top: 2em;
-	margin-bottom:5em;
-	@include span(2 of 4);		
+	
+	@include span(2 at 2 of 4);
+			
 }
 #terminology {
 	height:1200px

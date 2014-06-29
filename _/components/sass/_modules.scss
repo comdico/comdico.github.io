@@ -40,3 +40,10 @@
 //     -moz-osx-font-smoothing: grayscale;
 
 // }
+
+div.portrait img {
+	margin-left:3.8em;
+	width:9em;	
+	border:.4em solid $base-c;
+	@include border-radius(5em);
+}
