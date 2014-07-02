@@ -1,7 +1,7 @@
-body {
-@include container(show);
+// body {
+// @include container(show);
 
-}
+// }
 
 // CREATE GRID SYSTEM 
 // .container {
@@ -14,28 +14,28 @@ body {
 //   @include container (show);
 // }
 // }
-#page-header {
-	z-index:1000;
-	// height:700px
-}
 
-section {padding-bottom:3em; @include clearfix;}
+
+//section { @include clearfix;}
 
 
 .preamble {
-	@include span(2 of 4);
-	@include push(1);
+	// @include span(2 of 4);
+	// @include push(1);
 	position:relative;
+
+
 }
 
 .preamble blockquote {
+	max-width:700px;
+	margin: 0 auto;
+	
 	@include clearfix;
-	height:10.5em;
-	margin-top: 6em;
-	margin-right:0;
 	// position: fixed;
 	// bottom:5em;
 	// @include span(2 of 4);
+
 }
 .portrait {
 	@include span(1 at 1 of 4);	

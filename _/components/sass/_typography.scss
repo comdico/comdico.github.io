@@ -31,6 +31,7 @@ h5   { font-size: 25px; font-size: 2.5rem; } /* =25px */
 h6   { font-size: 20px; font-size: 2rem; } /* =20px */
 p  { font-size: 17px; font-size: 1.7rem; 
     line-height: 2.8rem;/* =16px */
+    color:$base-c;
     @include breakpoint (240px) {
         font-size: 20px; font-size: 2rem; 
     }
@@ -82,7 +83,7 @@ li { font-size: 14px; font-size: 1.333rem;/* =14px? */
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
-  text-align: center;
+ 
   /* opacity: .8; */
  
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -94,7 +95,7 @@ li { font-size: 14px; font-size: 1.333rem;/* =14px? */
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  // margin-left: .2em;
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -102,6 +103,8 @@ li { font-size: 14px; font-size: 1.333rem;/* =14px? */
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
+
 ::selection {
     background: pink;
     color: #222;
@@ -114,16 +117,17 @@ body {
     background-color: $bg1;
 }
 
-#page-header h1 {
+#slide-1 h1 {
     font-family: "p22-underground-sc",sans-serif;
     // font-size: 3rem; 
     text-align: center;
-    margin: 1.3em 0 0 0;
+    margin: 1em 0 0 0;
     padding: 0;
     letter-spacing: .09em;
+    color: $base-c;
 }
 
-#page-header h5, #page-header h5 ul {
+#slide-1  h5, #slide-1  h5 ul {
     font-family: "proxima-nova",sans-serif;
     // font-size: 2.4vw; 
     text-align: center;
@@ -138,41 +142,48 @@ body {
     // border-right: 2px solid $base-c;
 }
 
-#page-header .icon {
+#slide-1 .icon {
     font-family: cdings; 
-    font-size:10vw; 
+    font-size:10em; 
     display: block;
-    // margin: 2em auto 0;
-    margin-top:.5em;
-    padding-left: -.3em;
     margin-left: -.3em;
-    text-align: center;
-    // width:1em;
-    // border: .6vw solid #002b36;
-    // @include border-radius(1em, 1em);
     color: $base-c ;
+    text-align: center;
 }
 
-#page-header ul {
+#slide-1 ul {
     margin:0 auto;
-    padding: 8em 0 0;
-    width: span(2 of 4);
-     @include clearfix; 
-   
+    padding: 0;
+     @include breakpoint (240px) {
+      width: 100%;
+      max-width: 700px;
+     }
+     @include breakpoint (960px) {
+       width: span(2 of 4);
+       @include clearfix; 
+     }
 }
 
-#page-header ul li {
-    display: inline-block;
-    // float:left;
+#slide-1 ul li {
+    float:left;
     // margin-right:1em;
     // font-size: 1.1em; 
     position: relative; 
+    width: 33%;
+    font-size:1.1em;
+
 }
 
-#page-header ul li a {
+#slide-1 ul li a {
     padding-top: .8em;
     display:block;
-    padding-top:1em;
+    text-align: left;
+    // padding-top:1em;
+    
+}
+
+#slide-1 ul li a.icon-mail {
+    padding-left:2em;
     
 }
 
@@ -182,7 +193,7 @@ a {
 }
 a.icon-about:before {
     content: '\e806';
-    position: absolute;
+    position: relative;
     font-family: 'fontawesome';
     speak: none;
     font-style: normal;
@@ -190,19 +201,18 @@ a.icon-about:before {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    font-size: 2em;
-    top: -1em;
-    padding-left: .1em;
-    color: $base-c;
-
-
+    font-size: 2.6em;
+    top: -0.8em;
+    left: 1.3em;
+    padding-top: 2.2em;
+    color: #002b36;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 a.icon-pdf:before {
     content: "\e825";
-    position: absolute;
+    position: relative;
     font-family: 'fontawesome';
     speak: none;
     font-style: normal;
@@ -210,23 +220,23 @@ a.icon-pdf:before {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    font-size: 2em;
-    top: -1em;  
-    padding-left: .3em;
-    color: $base-c;
-
-
+    font-size: 2.6em;
+    top: -0.8em;
+    left: 1.4em;
+    padding-top: 2.2em;
+    color: #002b36;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 // a.icon-mail {background-color: blue;}
 // a.icon-pdf {background-color: green;}
 // a.icon-about {background-color: pink;}
 
 a.icon-mail:before {
     content: "\e819";
-    position: absolute;
+    position: relative;
     font-family: 'fontawesome';
     speak: none;
     font-style: normal;
@@ -234,63 +244,60 @@ a.icon-mail:before {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    font-size: 2em;
-    top: -1em;
-    left: -.1em;
-    color: $base-c;
-    padding-right: .3em;
-
-
-
+    font-size: 2.6em;
+    top: -0.8em;
+    left: 1.2em;
+    padding-top: 2.2em;
+    color: #002b36;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 
-@include breakpoint(380px) {
-    #page-header ul li a {
-        width: 16vw;
-        // background-color: pink;
-    }
-  }
-
-  @include breakpoint(600px) {
-    #page-header ul li a {
-        width: 18vw;
-        // background-color: blue;
-}
-       
-    }
- 
-// @include breakpoint(990px) {
-//     #page-header ul li{
-//         padding-right: 13vw;
-//         // background-color: green;
+// @include breakpoint(380px) {
+//     #slide-1 ul li a {
+//         width: 16vw;
+//         // background-color: pink;
 //     }
 //   }
-@include breakpoint(990px) {
-   #page-header ul li a {
-        width: 20vw;
-        // background-color: purple;
-}
+
+//   @include breakpoint(600px) {
+//     #slide-1 ul li a {
+//         width: 18vw;
+//         // background-color: blue;
+// }
+       
+//     }
+ 
+// // @include breakpoint(990px) {
+// //     #page-header ul li{
+// //         padding-right: 13vw;
+// //         // background-color: green;
+// //     }
+// //   }
+// @include breakpoint(990px) {
+//    #slide-1 ul li a {
+//         width: 20vw;
+//         // background-color: purple;
+// }
         
-    }
+//     }
  
 
 
-#page-header ul li:last-child {
+// #slide-1 ul li:last-child {
     
-    float: right;
-    width:2.3em;
-}
+//     float: right;
+//     width:2.3em;
+// }
 
 
 a:hover, a:hover:before { 
     color:#F10061;
     @include transition-duration(.3s);
 }
-
+#filmmaking p {text-align:left;}
 #filmmaking span {font-weight:bold;}
 
 #terminology p:first-child {
@@ -298,7 +305,29 @@ a:hover, a:hover:before {
     text-align:right;
     padding-right:5em;
 }
+.iconeq {padding:0 1em;}
+.iconeq:before {
+ content: '\e827';
+ position: absolute;
+    font-family: 'fontawesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 1.2em;
+    display:block;
 
+    color: $base-c;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+#slide-4 h2 {color: whitesmoke; }
+#slide-5 h2 {color: $base-c; }
 /*
 @font-face {
 	font-family: 'cdings';

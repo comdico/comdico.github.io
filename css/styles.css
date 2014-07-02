@@ -1175,54 +1175,242 @@ textarea {
   content: "\e61c";
 }
 
-/* line 1, ../_/components/sass/_layout.scss */
-body {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-size: 26.31579%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
-}
-/* line 12, ../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-body:after {
-  content: " ";
-  display: block;
-  clear: both;
+/* line 1, ../_/components/sass/_base.scss */
+body, html {
+  height: 100%;
+  min-height: 100%;
+  background-color: #ccc;
 }
 
-/* line 17, ../_/components/sass/_layout.scss */
-#page-header {
-  z-index: 1000;
+/* line 6, ../_/components/sass/_base.scss */
+.loading {
+  background: url("../img/ico_loading.gif") no-repeat center center;
 }
 
-/* line 22, ../_/components/sass/_layout.scss */
+/* line 10, ../_/components/sass/_base.scss */
 section {
-  padding-bottom: 3em;
-  overflow: hidden;
-  *zoom: 1;
+  min-width: 960px;
+  opacity: 0;
+  padding: 0;
 }
 
-/* line 25, ../_/components/sass/_layout.scss */
-.preamble {
-  width: 47.36842%;
-  float: left;
-  margin-right: 5.26316%;
-  margin-left: 26.31579%;
+/* line 16, ../_/components/sass/_base.scss */
+.loaded section,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+/* line 23, ../_/components/sass/_base.scss */
+main {
+  overflow-x: hidden;
+}
+
+@media (min-width: 240px) {
+  /* line 27, ../_/components/sass/_base.scss */
+  section {
+    min-width: 240px;
+  }
+}
+@media (min-width: 580px) {
+  /* line 27, ../_/components/sass/_base.scss */
+  section {
+    min-width: 580px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 27, ../_/components/sass/_base.scss */
+  section {
+    min-width: 768px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 27, ../_/components/sass/_base.scss */
+  section {
+    min-width: 960px;
+  }
+}
+
+/* CSS */
+/* line 43, ../_/components/sass/_base.scss */
+.hsContainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   position: relative;
 }
 
-/* line 31, ../_/components/sass/_layout.scss */
+/* line 52, ../_/components/sass/_base.scss */
+.hsContent {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  color: #ebebeb;
+  padding: 0 8%;
+  text-align: center;
+}
+
+/* line 61, ../_/components/sass/_base.scss */
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 70, ../_/components/sass/_base.scss */
+.drop {
+  background: #09f;
+  font-weight: bold;
+  padding: 1em;
+  display: block;
+  width: 200px;
+  position: absolute;
+}
+
+/* Slide 1 */
+/* line 80, ../_/components/sass/_base.scss */
+#slide-1 .bcg {
+  background-color: whitesmoke;
+  z-index: 10;
+  /*background-image:url('../img/bcg_slide-1.jpg');*/
+}
+
+/* CSS - Slide 2 */
+/* line 87, ../_/components/sass/_base.scss */
+#slide-2 .bcg {
+  background: none;
+  background-color: #010101;
+  height: 310px;
+  text-align: center;
+}
+
+/* CSS - Slide 3 */
+/* line 95, ../_/components/sass/_base.scss */
+#slide-3 .bcg {
+  z-index: 1;
+}
+
+/* line 99, ../_/components/sass/_base.scss */
+.plaxEl {
+  pading-top: 1em;
+}
+
+/* Slide 4 */
+/* line 103, ../_/components/sass/_base.scss */
+.curtainContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 107, ../_/components/sass/_base.scss */
+.curtainContainer .curtain {
+  width: 300%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 113, ../_/components/sass/_base.scss */
+.curtainContainer .copy {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 118, ../_/components/sass/_base.scss */
+#slide-4 .bcg {
+  background-image: url("../img/fellini.jpg");
+  z-index: 20;
+}
+
+/* Slide 5 */
+/* line 125, ../_/components/sass/_base.scss */
+#slide-5 .bcg {
+  background-image: url("../img/JPMA-Sitemap.png");
+}
+
+/* line 128, ../_/components/sass/_base.scss */
+#slide-5 .bcg2 {
+  background-image: url("../img/JPMA-Sitemap2.png");
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 136, ../_/components/sass/_base.scss */
+#slide-5 h1 {
+  color: #f5f5f5;
+  background-color: #002b36;
+}
+
+/* Slide 6 */
+/* line 143, ../_/components/sass/_base.scss */
+#slide-6 h3 {
+  margin-bottom: 0;
+}
+
+/* line 147, ../_/components/sass/_base.scss */
+#slide-6 h5 {
+  margin: 0 0 1em 0;
+  padding-top: 0;
+}
+
+/* line 152, ../_/components/sass/_base.scss */
+#slide-6 .bcg {
+  background-color: #1f98d6;
+  padding: 1em 0 1em 0;
+}
+
+/* line 156, ../_/components/sass/_base.scss */
+#slide-6 article {
+  width: 55%;
+  float: right;
+}
+
+/* line 162, ../_/components/sass/_base.scss */
+#slide-6 figure {
+  margin-top: 2em;
+  margin-right: 66%;
+  width: 40%;
+}
+
+/* line 169, ../_/components/sass/_base.scss */
+#slide-6 img {
+  width: 100%;
+}
+
+/* line 173, ../_/components/sass/_base.scss */
+#slide-6 p {
+  text-align: left;
+  margin-left: 3em;
+}
+
+/* line 22, ../_/components/sass/_layout.scss */
+.preamble {
+  position: relative;
+}
+
+/* line 30, ../_/components/sass/_layout.scss */
 .preamble blockquote {
+  max-width: 700px;
+  margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
-  height: 10.5em;
-  margin-top: 6em;
-  margin-right: 0;
 }
 
 /* line 40, ../_/components/sass/_layout.scss */
@@ -1249,7 +1437,66 @@ section {
   height: 1200px;
 }
 
-/* line 44, ../_/components/sass/_modules.scss */
+/* line 2, ../_/components/sass/_modules.scss */
+.md-modal {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 16, ../_/components/sass/_modules.scss */
+.md-show {
+  visibility: visible;
+}
+
+/* line 20, ../_/components/sass/_modules.scss */
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(143, 27, 15, 0.8);
+  transition: all 0.3s;
+}
+
+/* line 33, ../_/components/sass/_modules.scss */
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Effect 5: newspaper */
+/* line 39, ../_/components/sass/_modules.scss */
+.md-show.md-effect-5 ~ .md-overlay {
+  background: rgba(0, 127, 108, 0.8);
+}
+
+/* line 43, ../_/components/sass/_modules.scss */
+.md-effect-5 .md-content {
+  transform: scale(0) rotate(720deg);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+/* line 49, ../_/components/sass/_modules.scss */
+.md-show.md-effect-5 .md-content {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+/* line 55, ../_/components/sass/_modules.scss */
 div.portrait img {
   margin-left: 3.8em;
   width: 9em;
@@ -1353,6 +1600,7 @@ p {
   font-size: 1.7rem;
   line-height: 2.8rem;
   /* =16px */
+  color: #002b36;
 }
 @media (min-width: 240px) {
   /* line 32, ../_/components/sass/_typography.scss */
@@ -1369,20 +1617,20 @@ p {
   }
 }
 
-/* line 41, ../_/components/sass/_typography.scss */
+/* line 42, ../_/components/sass/_typography.scss */
 li {
   font-size: 14px;
   font-size: 1.333rem;
   /* =14px? */
 }
 @media (min-width: 240px) {
-  /* line 41, ../_/components/sass/_typography.scss */
+  /* line 42, ../_/components/sass/_typography.scss */
   li {
     font-size: 2rem;
   }
 }
 @media (min-width: 580px) {
-  /* line 41, ../_/components/sass/_typography.scss */
+  /* line 42, ../_/components/sass/_typography.scss */
   li {
     font-size: 1.6rem;
   }
@@ -1409,7 +1657,7 @@ li {
   }
 }
 */
-/* line 75, ../_/components/sass/_typography.scss */
+/* line 76, ../_/components/sass/_typography.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontawesome";
   font-style: normal;
@@ -1419,7 +1667,6 @@ li {
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
-  text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
@@ -1428,37 +1675,37 @@ li {
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 105, ../_/components/sass/_typography.scss */
+/* line 108, ../_/components/sass/_typography.scss */
 ::selection {
   background: pink;
   color: #222;
 }
 
-/* line 111, ../_/components/sass/_typography.scss */
+/* line 114, ../_/components/sass/_typography.scss */
 body {
   font-family: "proxima-nova",sans-serif;
   color: #002b36;
   background-color: whitesmoke;
 }
 
-/* line 117, ../_/components/sass/_typography.scss */
-#page-header h1 {
+/* line 120, ../_/components/sass/_typography.scss */
+#slide-1 h1 {
   font-family: "p22-underground-sc",sans-serif;
   text-align: center;
-  margin: 1.3em 0 0 0;
+  margin: 1em 0 0 0;
   padding: 0;
   letter-spacing: .09em;
+  color: #002b36;
 }
 
-/* line 126, ../_/components/sass/_typography.scss */
-#page-header h5, #page-header h5 ul {
+/* line 130, ../_/components/sass/_typography.scss */
+#slide-1 h5, #slide-1 h5 ul {
   font-family: "proxima-nova",sans-serif;
   text-align: center;
   color: #93a1a1;
@@ -1467,56 +1714,73 @@ body {
   letter-spacing: .09em;
 }
 
-/* line 136, ../_/components/sass/_typography.scss */
+/* line 140, ../_/components/sass/_typography.scss */
 .preamble blockquote {
   font-size: 26px;
   font-size: 2.6rem;
 }
 
-/* line 141, ../_/components/sass/_typography.scss */
-#page-header .icon {
+/* line 145, ../_/components/sass/_typography.scss */
+#slide-1 .icon {
   font-family: cdings;
-  font-size: 10vw;
+  font-size: 10em;
   display: block;
-  margin-top: .5em;
-  padding-left: -.3em;
   margin-left: -.3em;
-  text-align: center;
   color: #002b36;
+  text-align: center;
 }
 
-/* line 156, ../_/components/sass/_typography.scss */
-#page-header ul {
+/* line 154, ../_/components/sass/_typography.scss */
+#slide-1 ul {
   margin: 0 auto;
-  padding: 8em 0 0;
-  width: 47.36842%;
-  overflow: hidden;
-  *zoom: 1;
+  padding: 0;
+}
+@media (min-width: 240px) {
+  /* line 154, ../_/components/sass/_typography.scss */
+  #slide-1 ul {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 154, ../_/components/sass/_typography.scss */
+  #slide-1 ul {
+    width: 47.36842%;
+    overflow: hidden;
+    *zoom: 1;
+  }
 }
 
-/* line 164, ../_/components/sass/_typography.scss */
-#page-header ul li {
-  display: inline-block;
+/* line 167, ../_/components/sass/_typography.scss */
+#slide-1 ul li {
+  float: left;
   position: relative;
+  width: 33%;
+  font-size: 1.1em;
 }
 
-/* line 172, ../_/components/sass/_typography.scss */
-#page-header ul li a {
+/* line 177, ../_/components/sass/_typography.scss */
+#slide-1 ul li a {
   padding-top: .8em;
   display: block;
-  padding-top: 1em;
+  text-align: left;
 }
 
-/* line 179, ../_/components/sass/_typography.scss */
+/* line 185, ../_/components/sass/_typography.scss */
+#slide-1 ul li a.icon-mail {
+  padding-left: 2em;
+}
+
+/* line 190, ../_/components/sass/_typography.scss */
 a {
   text-decoration: none;
   color: #002b36;
 }
 
-/* line 183, ../_/components/sass/_typography.scss */
+/* line 194, ../_/components/sass/_typography.scss */
 a.icon-about:before {
   content: '\e806';
-  position: absolute;
+  position: relative;
   font-family: 'fontawesome';
   speak: none;
   font-style: normal;
@@ -1524,19 +1788,20 @@ a.icon-about:before {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 2em;
-  top: -1em;
-  padding-left: .1em;
+  font-size: 2.6em;
+  top: -0.8em;
+  left: 1.3em;
+  padding-top: 2.2em;
   color: #002b36;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 203, ../_/components/sass/_typography.scss */
+/* line 213, ../_/components/sass/_typography.scss */
 a.icon-pdf:before {
   content: "\e825";
-  position: absolute;
+  position: relative;
   font-family: 'fontawesome';
   speak: none;
   font-style: normal;
@@ -1544,19 +1809,20 @@ a.icon-pdf:before {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 2em;
-  top: -1em;
-  padding-left: .3em;
+  font-size: 2.6em;
+  top: -0.8em;
+  left: 1.4em;
+  padding-top: 2.2em;
   color: #002b36;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 227, ../_/components/sass/_typography.scss */
+/* line 237, ../_/components/sass/_typography.scss */
 a.icon-mail:before {
   content: "\e819";
-  position: absolute;
+  position: relative;
   font-family: 'fontawesome';
   speak: none;
   font-style: normal;
@@ -1564,41 +1830,17 @@ a.icon-mail:before {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 2em;
-  top: -1em;
-  left: -.1em;
+  font-size: 2.6em;
+  top: -0.8em;
+  left: 1.2em;
+  padding-top: 2.2em;
   color: #002b36;
-  padding-right: .3em;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 380px) {
-  /* line 252, ../_/components/sass/_typography.scss */
-  #page-header ul li a {
-    width: 16vw;
-  }
-}
-@media (min-width: 600px) {
-  /* line 259, ../_/components/sass/_typography.scss */
-  #page-header ul li a {
-    width: 18vw;
-  }
-}
-@media (min-width: 990px) {
-  /* line 273, ../_/components/sass/_typography.scss */
-  #page-header ul li a {
-    width: 20vw;
-  }
-}
-/* line 282, ../_/components/sass/_typography.scss */
-#page-header ul li:last-child {
-  float: right;
-  width: 2.3em;
-}
-
-/* line 289, ../_/components/sass/_typography.scss */
+/* line 296, ../_/components/sass/_typography.scss */
 a:hover, a:hover:before {
   color: #F10061;
   -moz-transition-duration: 0.3s;
@@ -1607,16 +1849,55 @@ a:hover, a:hover:before {
   transition-duration: 0.3s;
 }
 
-/* line 294, ../_/components/sass/_typography.scss */
+/* line 300, ../_/components/sass/_typography.scss */
+#filmmaking p {
+  text-align: left;
+}
+
+/* line 301, ../_/components/sass/_typography.scss */
 #filmmaking span {
   font-weight: bold;
 }
 
-/* line 296, ../_/components/sass/_typography.scss */
+/* line 303, ../_/components/sass/_typography.scss */
 #terminology p:first-child {
   color: whitesmoke;
   text-align: right;
   padding-right: 5em;
+}
+
+/* line 308, ../_/components/sass/_typography.scss */
+.iconeq {
+  padding: 0 1em;
+}
+
+/* line 309, ../_/components/sass/_typography.scss */
+.iconeq:before {
+  content: '\e827';
+  position: absolute;
+  font-family: 'fontawesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.2em;
+  display: block;
+  color: #002b36;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 329, ../_/components/sass/_typography.scss */
+#slide-4 h2 {
+  color: whitesmoke;
+}
+
+/* line 330, ../_/components/sass/_typography.scss */
+#slide-5 h2 {
+  color: #002b36;
 }
 
 /*
