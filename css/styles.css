@@ -1187,14 +1187,14 @@ body, html {
   background: url("../img/ico_loading.gif") no-repeat center center;
 }
 
-/* line 10, ../_/components/sass/_base.scss */
+/* line 11, ../_/components/sass/_base.scss */
 section {
   min-width: 960px;
   opacity: 0;
   padding: 0;
 }
 
-/* line 16, ../_/components/sass/_base.scss */
+/* line 17, ../_/components/sass/_base.scss */
 .loaded section,
 .no-js section {
   opacity: 1;
@@ -1203,38 +1203,38 @@ section {
   transition: opacity 300ms ease-out;
 }
 
-/* line 23, ../_/components/sass/_base.scss */
+/* line 24, ../_/components/sass/_base.scss */
 main {
   overflow-x: hidden;
 }
 
 @media (min-width: 240px) {
-  /* line 27, ../_/components/sass/_base.scss */
+  /* line 28, ../_/components/sass/_base.scss */
   section {
     min-width: 240px;
   }
 }
 @media (min-width: 580px) {
-  /* line 27, ../_/components/sass/_base.scss */
+  /* line 28, ../_/components/sass/_base.scss */
   section {
     min-width: 580px;
   }
 }
 @media (min-width: 768px) {
-  /* line 27, ../_/components/sass/_base.scss */
+  /* line 28, ../_/components/sass/_base.scss */
   section {
     min-width: 768px;
   }
 }
 @media (min-width: 960px) {
-  /* line 27, ../_/components/sass/_base.scss */
+  /* line 28, ../_/components/sass/_base.scss */
   section {
     min-width: 960px;
   }
 }
 
 /* CSS */
-/* line 43, ../_/components/sass/_base.scss */
+/* line 44, ../_/components/sass/_base.scss */
 .hsContainer {
   display: table;
   table-layout: fixed;
@@ -1244,7 +1244,7 @@ main {
   position: relative;
 }
 
-/* line 52, ../_/components/sass/_base.scss */
+/* line 53, ../_/components/sass/_base.scss */
 .hsContent {
   max-width: 450px;
   margin: -150px auto 0 auto;
@@ -1255,7 +1255,7 @@ main {
   text-align: center;
 }
 
-/* line 61, ../_/components/sass/_base.scss */
+/* line 62, ../_/components/sass/_base.scss */
 .bcg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -1265,7 +1265,7 @@ main {
   width: 100%;
 }
 
-/* line 70, ../_/components/sass/_base.scss */
+/* line 71, ../_/components/sass/_base.scss */
 .drop {
   background: #09f;
   font-weight: bold;
@@ -1276,7 +1276,7 @@ main {
 }
 
 /* Slide 1 */
-/* line 80, ../_/components/sass/_base.scss */
+/* line 81, ../_/components/sass/_base.scss */
 #slide-1 .bcg {
   background-color: whitesmoke;
   z-index: 10;
@@ -1284,7 +1284,7 @@ main {
 }
 
 /* CSS - Slide 2 */
-/* line 87, ../_/components/sass/_base.scss */
+/* line 88, ../_/components/sass/_base.scss */
 #slide-2 .bcg {
   background: none;
   background-color: #010101;
@@ -1293,25 +1293,25 @@ main {
 }
 
 /* CSS - Slide 3 */
-/* line 95, ../_/components/sass/_base.scss */
+/* line 96, ../_/components/sass/_base.scss */
 #slide-3 .bcg {
   z-index: 1;
 }
 
-/* line 99, ../_/components/sass/_base.scss */
+/* line 100, ../_/components/sass/_base.scss */
 .plaxEl {
   pading-top: 1em;
 }
 
 /* Slide 4 */
-/* line 103, ../_/components/sass/_base.scss */
+/* line 104, ../_/components/sass/_base.scss */
 .curtainContainer {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-/* line 107, ../_/components/sass/_base.scss */
+/* line 108, ../_/components/sass/_base.scss */
 .curtainContainer .curtain {
   width: 300%;
   height: 1px;
@@ -1322,7 +1322,7 @@ main {
   opacity: 0;
 }
 
-/* line 113, ../_/components/sass/_base.scss */
+/* line 114, ../_/components/sass/_base.scss */
 .curtainContainer .copy {
   position: absolute;
   bottom: 30%;
@@ -1331,19 +1331,19 @@ main {
   text-align: center;
 }
 
-/* line 118, ../_/components/sass/_base.scss */
+/* line 119, ../_/components/sass/_base.scss */
 #slide-4 .bcg {
   background-image: url("../img/fellini.jpg");
   z-index: 20;
 }
 
-/* Slide 5 */
-/* line 125, ../_/components/sass/_base.scss */
+/* Slide 5/7/9 */
+/* line 126, ../_/components/sass/_base.scss */
 #slide-5 .bcg {
   background-image: url("../img/JPMA-Sitemap.png");
 }
 
-/* line 128, ../_/components/sass/_base.scss */
+/* line 129, ../_/components/sass/_base.scss */
 #slide-5 .bcg2 {
   background-image: url("../img/JPMA-Sitemap2.png");
   bottom: 0;
@@ -1352,52 +1352,92 @@ main {
   z-index: 1;
 }
 
-/* line 136, ../_/components/sass/_base.scss */
-#slide-5 h1 {
+/* line 137, ../_/components/sass/_base.scss */
+#slide-7 .bcg2 {
+  background-image: url("../img/SFB-wireframes.png");
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 145, ../_/components/sass/_base.scss */
+#slide-9 .bcg2 {
+  background-image: url("../img/OARSI-vision.png");
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 154, ../_/components/sass/_base.scss */
+#slide-5 h1, #slide-7 h1, #slide-9 h1 {
   color: #f5f5f5;
   background-color: #002b36;
 }
 
-/* Slide 6 */
-/* line 143, ../_/components/sass/_base.scss */
-#slide-6 h3 {
+/* Slide 6/ 8/ 10 */
+/* line 161, ../_/components/sass/_base.scss */
+#slide-6 h3, #slide-8 h3, #slide-10 h3 {
   margin-bottom: 0;
 }
 
-/* line 147, ../_/components/sass/_base.scss */
-#slide-6 h5 {
+/* line 165, ../_/components/sass/_base.scss */
+#slide-6 h5, #slide-8 h5, #slide-10 h5 {
   margin: 0 0 1em 0;
   padding-top: 0;
 }
 
-/* line 152, ../_/components/sass/_base.scss */
+/* line 170, ../_/components/sass/_base.scss */
 #slide-6 .bcg {
   background-color: #1f98d6;
+  padding: 0;
+}
+
+/* line 175, ../_/components/sass/_base.scss */
+#slide-8 .bcg {
+  background-color: #7d7a8f;
   padding: 1em 0 1em 0;
 }
 
-/* line 156, ../_/components/sass/_base.scss */
-#slide-6 article {
+/* line 180, ../_/components/sass/_base.scss */
+#slide-10 .bcg {
+  background-color: #db4c44;
+  padding: 1em 0 1em 0;
+}
+
+/* line 186, ../_/components/sass/_base.scss */
+#slide-6 article, #slide-8 article, #slide-10 article {
   width: 55%;
   float: right;
 }
 
-/* line 162, ../_/components/sass/_base.scss */
-#slide-6 figure {
+/* line 192, ../_/components/sass/_base.scss */
+#slide-6 figure, #slide-8 figure, #slide-10 figure {
   margin-top: 2em;
   margin-right: 66%;
   width: 40%;
 }
 
-/* line 169, ../_/components/sass/_base.scss */
-#slide-6 img {
+/* line 199, ../_/components/sass/_base.scss */
+#slide-6 img, #slide-8 img, #slide-10 img {
   width: 100%;
 }
 
-/* line 173, ../_/components/sass/_base.scss */
-#slide-6 p {
+/* line 203, ../_/components/sass/_base.scss */
+#slide-6 p, #slide-8 p, #slide-10 p {
   text-align: left;
   margin-left: 3em;
+}
+
+/* line 208, ../_/components/sass/_base.scss */
+footer {
+  background-color: #002b36;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
 }
 
 /* line 22, ../_/components/sass/_layout.scss */
@@ -1435,6 +1475,24 @@ main {
 /* line 52, ../_/components/sass/_layout.scss */
 #terminology {
   height: 1200px;
+}
+
+/* line 56, ../_/components/sass/_layout.scss */
+footer {
+  text-align: center;
+  padding-top: 20em;
+  padding-bottom: 6em;
+}
+
+/* line 61, ../_/components/sass/_layout.scss */
+footer ul {
+  padding: 0;
+  text-align: center;
+}
+
+/* line 66, ../_/components/sass/_layout.scss */
+footer li {
+  display: inline;
 }
 
 /* line 2, ../_/components/sass/_modules.scss */
@@ -1721,7 +1779,7 @@ body {
 }
 
 /* line 145, ../_/components/sass/_typography.scss */
-#slide-1 .icon {
+#slide-1 .director-icon {
   font-family: cdings;
   font-size: 10em;
   display: block;
@@ -1739,47 +1797,43 @@ body {
   /* line 154, ../_/components/sass/_typography.scss */
   #slide-1 ul {
     width: 100%;
-    max-width: 700px;
   }
 }
 @media (min-width: 960px) {
   /* line 154, ../_/components/sass/_typography.scss */
   #slide-1 ul {
     width: 47.36842%;
+    max-width: 700px;
     overflow: hidden;
     *zoom: 1;
   }
 }
 
-/* line 167, ../_/components/sass/_typography.scss */
+/* line 168, ../_/components/sass/_typography.scss */
 #slide-1 ul li {
   float: left;
+  font-size: 1.2em;
   position: relative;
   width: 33%;
-  font-size: 1.1em;
+  list-style: none;
 }
 
-/* line 177, ../_/components/sass/_typography.scss */
+/* line 179, ../_/components/sass/_typography.scss */
 #slide-1 ul li a {
   padding-top: .8em;
   display: block;
   text-align: left;
+  padding-top: 1em;
 }
 
-/* line 185, ../_/components/sass/_typography.scss */
-#slide-1 ul li a.icon-mail {
-  padding-left: 2em;
-}
-
-/* line 190, ../_/components/sass/_typography.scss */
+/* line 192, ../_/components/sass/_typography.scss */
 a {
   text-decoration: none;
   color: #002b36;
 }
 
-/* line 194, ../_/components/sass/_typography.scss */
-a.icon-about:before {
-  content: '\e806';
+/* line 201, ../_/components/sass/_typography.scss */
+#slide-1 .icon:before {
   position: relative;
   font-family: 'fontawesome';
   speak: none;
@@ -1789,7 +1843,7 @@ a.icon-about:before {
   text-transform: none;
   line-height: 1;
   font-size: 2.6em;
-  top: -0.8em;
+  top: -1em;
   left: 1.3em;
   padding-top: 2.2em;
   color: #002b36;
@@ -1798,49 +1852,32 @@ a.icon-about:before {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 213, ../_/components/sass/_typography.scss */
+/* line 220, ../_/components/sass/_typography.scss */
+footer .icon {
+  color: whitesmoke;
+}
+
+/* line 224, ../_/components/sass/_typography.scss */
+a.icon-about:before {
+  content: '\e806';
+}
+
+/* line 228, ../_/components/sass/_typography.scss */
 a.icon-pdf:before {
   content: "\e825";
-  position: relative;
-  font-family: 'fontawesome';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 2.6em;
-  top: -0.8em;
-  left: 1.4em;
-  padding-top: 2.2em;
-  color: #002b36;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 237, ../_/components/sass/_typography.scss */
+/* line 233, ../_/components/sass/_typography.scss */
+a.icon-mail {
+  text-align: right;
+}
+
+/* line 235, ../_/components/sass/_typography.scss */
 a.icon-mail:before {
   content: "\e819";
-  position: relative;
-  font-family: 'fontawesome';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 2.6em;
-  top: -0.8em;
-  left: 1.2em;
-  padding-top: 2.2em;
-  color: #002b36;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 296, ../_/components/sass/_typography.scss */
+/* line 280, ../_/components/sass/_typography.scss */
 a:hover, a:hover:before {
   color: #F10061;
   -moz-transition-duration: 0.3s;
@@ -1849,54 +1886,69 @@ a:hover, a:hover:before {
   transition-duration: 0.3s;
 }
 
-/* line 300, ../_/components/sass/_typography.scss */
+/* line 285, ../_/components/sass/_typography.scss */
 #filmmaking p {
   text-align: left;
 }
 
-/* line 301, ../_/components/sass/_typography.scss */
+/* line 286, ../_/components/sass/_typography.scss */
 #filmmaking span {
   font-weight: bold;
 }
 
-/* line 303, ../_/components/sass/_typography.scss */
+/* line 288, ../_/components/sass/_typography.scss */
 #terminology p:first-child {
   color: whitesmoke;
   text-align: right;
   padding-right: 5em;
 }
 
-/* line 308, ../_/components/sass/_typography.scss */
-.iconeq {
-  padding: 0 1em;
+/* line 294, ../_/components/sass/_typography.scss */
+footer h5, footer p {
+  color: whitesmoke;
 }
 
-/* line 309, ../_/components/sass/_typography.scss */
-.iconeq:before {
-  content: '\e827';
-  position: absolute;
-  font-family: 'fontawesome';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 1.2em;
-  display: block;
-  color: #002b36;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* line 295, ../_/components/sass/_typography.scss */
+footer p {
+  font-size: .8em;
 }
 
-/* line 329, ../_/components/sass/_typography.scss */
+/* line 296, ../_/components/sass/_typography.scss */
+footer li a.icon span {
+  display: none;
+}
+
+/* line 300, ../_/components/sass/_typography.scss */
+a.icon-twitter:before {
+  content: "\e844";
+  font-size: 3em;
+}
+
+/* line 306, ../_/components/sass/_typography.scss */
+a.icon-linkedin:before {
+  content: "\e83e";
+  font-size: 3em;
+}
+
+/* line 312, ../_/components/sass/_typography.scss */
+a.icon-vimeo:before {
+  content: "\e846";
+  font-size: 3em;
+}
+
+/* line 318, ../_/components/sass/_typography.scss */
+a.icon-flickr:before {
+  content: "\e837";
+  font-size: 3em;
+}
+
+/* line 326, ../_/components/sass/_typography.scss */
 #slide-4 h2 {
   color: whitesmoke;
 }
 
-/* line 330, ../_/components/sass/_typography.scss */
-#slide-5 h2 {
+/* line 327, ../_/components/sass/_typography.scss */
+#slide-5 h2, #slide-7 h2, #slide-9 h2 {
   color: #002b36;
 }
 

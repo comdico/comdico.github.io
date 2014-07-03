@@ -142,7 +142,7 @@ body {
     // border-right: 2px solid $base-c;
 }
 
-#slide-1 .icon {
+#slide-1 .director-icon {
     font-family: cdings; 
     font-size:10em; 
     display: block;
@@ -156,10 +156,11 @@ body {
     padding: 0;
      @include breakpoint (240px) {
       width: 100%;
-      max-width: 700px;
+      
      }
      @include breakpoint (960px) {
        width: span(2 of 4);
+        max-width: 700px;
        @include clearfix; 
      }
 }
@@ -167,10 +168,11 @@ body {
 #slide-1 ul li {
     float:left;
     // margin-right:1em;
-    // font-size: 1.1em; 
+    font-size: 1.2em; 
     position: relative; 
     width: 33%;
-    font-size:1.1em;
+    list-style: none;
+    
 
 }
 
@@ -178,21 +180,25 @@ body {
     padding-top: .8em;
     display:block;
     text-align: left;
-    // padding-top:1em;
+    padding-top:1em;
     
 }
 
-#slide-1 ul li a.icon-mail {
-    padding-left:2em;
-    
-}
+//#slide-1 ul li a.icon-mail {
+//    padding-left:2em;
+//    
+//}
 
 a {
     text-decoration: none;
     color: $base-c;
 }
-a.icon-about:before {
-    content: '\e806';
+
+// a.icon-mail {background-color: blue;}
+// a.icon-pdf {background-color: green;}
+// a.icon-about {background-color: pink;}
+
+#slide-1 .icon:before {
     position: relative;
     font-family: 'fontawesome';
     speak: none;
@@ -202,7 +208,7 @@ a.icon-about:before {
     text-transform: none;
     line-height: 1;
     font-size: 2.6em;
-    top: -0.8em;
+    top: -1em;
     left: 1.3em;
     padding-top: 2.2em;
     color: #002b36;
@@ -210,48 +216,26 @@ a.icon-about:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-a.icon-pdf:before {
-    content: "\e825";
-    position: relative;
-    font-family: 'fontawesome';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    font-size: 2.6em;
-    top: -0.8em;
-    left: 1.4em;
-    padding-top: 2.2em;
-    color: #002b36;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+footer .icon {
+    color:whitesmoke;
 }
 
-// a.icon-mail {background-color: blue;}
-// a.icon-pdf {background-color: green;}
-// a.icon-about {background-color: pink;}
+a.icon-about:before {
+    content: '\e806';
+    
+}
+a.icon-pdf:before {
+    content: "\e825";
+//    left: 1.4em;
+  
+}
+a.icon-mail {text-align:right;}
 
 a.icon-mail:before {
     content: "\e819";
-    position: relative;
-    font-family: 'fontawesome';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    font-size: 2.6em;
-    top: -0.8em;
-    left: 1.2em;
-    padding-top: 2.2em;
-    color: #002b36;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+//    left: 1.2em;
+    
 }
 
 
@@ -297,6 +281,7 @@ a:hover, a:hover:before {
     color:#F10061;
     @include transition-duration(.3s);
 }
+
 #filmmaking p {text-align:left;}
 #filmmaking span {font-weight:bold;}
 
@@ -305,29 +290,41 @@ a:hover, a:hover:before {
     text-align:right;
     padding-right:5em;
 }
-.iconeq {padding:0 1em;}
-.iconeq:before {
- content: '\e827';
- position: absolute;
-    font-family: 'fontawesome';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    font-size: 1.2em;
-    display:block;
 
-    color: $base-c;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+footer h5, footer p {color:whitesmoke;}
+footer p {font-size: .8em;}
+footer  li a.icon span {display:none;}
+
+//FOOTER ICONS
+
+a.icon-twitter:before {
+    content: "\e844";
+    font-size: 3em;
 
 }
 
+a.icon-linkedin:before {
+    content: "\e83e";
+    font-size: 3em;
+
+}
+
+a.icon-vimeo:before {
+    content: "\e846";
+    font-size: 3em;
+
+}
+
+a.icon-flickr:before {
+    content: "\e837";
+    font-size: 3em;
+
+}
+
+
+
 #slide-4 h2 {color: whitesmoke; }
-#slide-5 h2 {color: $base-c; }
+#slide-5 h2, #slide-7 h2, #slide-9 h2  {color: $base-c; }
 /*
 @font-face {
 	font-family: 'cdings';

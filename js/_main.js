@@ -54,7 +54,7 @@
 	    $slide.height(winH);
 	    $slideTall.height(winH*1.5);
 	    $slideTall2.height(winH*2);
-	    $slideTall3.height(winH*.7);
+	    $slideTall3.height(winH*.8);
 	    
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.homeSlide'));
