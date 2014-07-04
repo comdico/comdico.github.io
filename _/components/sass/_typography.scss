@@ -155,12 +155,16 @@ body {
     margin:0 auto;
     padding: 0;
      @include breakpoint (240px) {
-      width: 100%;
+      width: 70%;
+         margin:0 auto;
+       
+       @include clearfix;
       
      }
      @include breakpoint (960px) {
-       width: span(2 of 4);
-        max-width: 700px;
+        width: 70%;
+        margin:0 auto;
+        max-width: 675px;
        @include clearfix; 
      }
 }
@@ -171,9 +175,13 @@ body {
     font-size: 1.2em; 
     position: relative; 
     width: 33%;
-    list-style: none;
-    
+    list-style: none;   
+}
 
+#slide-1 ul li:last-child {
+    float:right;
+    width: 30%;
+  
 }
 
 #slide-1 ul li a {
@@ -209,33 +217,37 @@ a {
     line-height: 1;
     font-size: 2.6em;
     top: -1em;
-    left: 1.3em;
+    left: 1.4em;
     padding-top: 2.2em;
-    color: #002b36;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    pointer-events: none;
+ 
 }
 
 footer .icon {
     color:whitesmoke;
 }
 
-a.icon-about:before {
+#slide-1 a.icon-about:before {
     content: '\e806';
+   
+    
     
 }
-a.icon-pdf:before {
+#slide-1 a.icon-pdf:before {
     content: "\e825";
-//    left: 1.4em;
+    left: 1.5em;
   
 }
-a.icon-mail {text-align:right;}
 
-a.icon-mail:before {
+
+a.icon-mail {
+    text-align:right;}
+
+#slide-1 a.icon-mail:before {
     content: "\e819";
-//    left: 1.2em;
+    left: 1.3em;
     
 }
 
