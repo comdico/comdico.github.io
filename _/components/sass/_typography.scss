@@ -215,6 +215,7 @@ a {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    pointer-events: none;
 }
 
 footer .icon {
@@ -277,7 +278,7 @@ a.icon-mail:before {
 // }
 
 
-a:hover, a:hover:before { 
+a:hover, a:hover:before  { 
     color:#F10061;
     @include transition-duration(.3s);
 }

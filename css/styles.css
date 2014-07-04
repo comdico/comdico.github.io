@@ -1850,34 +1850,35 @@ a {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  pointer-events: none;
 }
 
-/* line 220, ../_/components/sass/_typography.scss */
+/* line 221, ../_/components/sass/_typography.scss */
 footer .icon {
   color: whitesmoke;
 }
 
-/* line 224, ../_/components/sass/_typography.scss */
+/* line 225, ../_/components/sass/_typography.scss */
 a.icon-about:before {
   content: '\e806';
 }
 
-/* line 228, ../_/components/sass/_typography.scss */
+/* line 229, ../_/components/sass/_typography.scss */
 a.icon-pdf:before {
   content: "\e825";
 }
 
-/* line 233, ../_/components/sass/_typography.scss */
+/* line 234, ../_/components/sass/_typography.scss */
 a.icon-mail {
   text-align: right;
 }
 
-/* line 235, ../_/components/sass/_typography.scss */
+/* line 236, ../_/components/sass/_typography.scss */
 a.icon-mail:before {
   content: "\e819";
 }
 
-/* line 280, ../_/components/sass/_typography.scss */
+/* line 281, ../_/components/sass/_typography.scss */
 a:hover, a:hover:before {
   color: #F10061;
   -moz-transition-duration: 0.3s;
@@ -1886,68 +1887,68 @@ a:hover, a:hover:before {
   transition-duration: 0.3s;
 }
 
-/* line 285, ../_/components/sass/_typography.scss */
+/* line 286, ../_/components/sass/_typography.scss */
 #filmmaking p {
   text-align: left;
 }
 
-/* line 286, ../_/components/sass/_typography.scss */
+/* line 287, ../_/components/sass/_typography.scss */
 #filmmaking span {
   font-weight: bold;
 }
 
-/* line 288, ../_/components/sass/_typography.scss */
+/* line 289, ../_/components/sass/_typography.scss */
 #terminology p:first-child {
   color: whitesmoke;
   text-align: right;
   padding-right: 5em;
 }
 
-/* line 294, ../_/components/sass/_typography.scss */
+/* line 295, ../_/components/sass/_typography.scss */
 footer h5, footer p {
   color: whitesmoke;
 }
 
-/* line 295, ../_/components/sass/_typography.scss */
+/* line 296, ../_/components/sass/_typography.scss */
 footer p {
   font-size: .8em;
 }
 
-/* line 296, ../_/components/sass/_typography.scss */
+/* line 297, ../_/components/sass/_typography.scss */
 footer li a.icon span {
   display: none;
 }
 
-/* line 300, ../_/components/sass/_typography.scss */
+/* line 301, ../_/components/sass/_typography.scss */
 a.icon-twitter:before {
   content: "\e844";
   font-size: 3em;
 }
 
-/* line 306, ../_/components/sass/_typography.scss */
+/* line 307, ../_/components/sass/_typography.scss */
 a.icon-linkedin:before {
   content: "\e83e";
   font-size: 3em;
 }
 
-/* line 312, ../_/components/sass/_typography.scss */
+/* line 313, ../_/components/sass/_typography.scss */
 a.icon-vimeo:before {
   content: "\e846";
   font-size: 3em;
 }
 
-/* line 318, ../_/components/sass/_typography.scss */
+/* line 319, ../_/components/sass/_typography.scss */
 a.icon-flickr:before {
   content: "\e837";
   font-size: 3em;
 }
 
-/* line 326, ../_/components/sass/_typography.scss */
+/* line 327, ../_/components/sass/_typography.scss */
 #slide-4 h2 {
   color: whitesmoke;
 }
 
-/* line 327, ../_/components/sass/_typography.scss */
+/* line 328, ../_/components/sass/_typography.scss */
 #slide-5 h2, #slide-7 h2, #slide-9 h2 {
   color: #002b36;
 }
