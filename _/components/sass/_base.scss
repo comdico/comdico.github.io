@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     min-height: 100%;
-    background-color: #ccc;
+
 }
 .loading {
     background: url('../img/ico_loading.gif') no-repeat center center;
@@ -78,6 +78,9 @@ section {
 }
 
 /* Slide 1 */
+
+#slide-1 {z-index:2000;}
+
 #slide-1 .bcg {
     background-color:whitesmoke;
     z-index: 10;
@@ -93,9 +96,12 @@ section {
 }
 
 /* CSS - Slide 3 */
+
+
 #slide-3 .bcg {
     // background-image:url('../img/bcg_slide-3.jpg');
     z-index:1;
+    background-color:whitesmoke;
 }
 .plaxEl {pading-top:1em}
 
@@ -184,15 +190,29 @@ section {
 
 
 #slide-6 article, #slide-8 article, #slide-10 article {
-    width:55%;
-    float:right;
+    
+     @include breakpoint (280px) {
+         width: 100%;
+    }
+     @include breakpoint (768px) {
+         width:60%;
+        float:right;
+    }
     
 }
 
 #slide-6 figure, #slide-8 figure, #slide-10 figure {
-    margin-top: 2em;
-    margin-right: 66%;
-    width: 40%;
+   
+     @include breakpoint (280px) {
+         margin: 1.5em auto;
+         width: 50%;
+         min-width:200px;
+    }
+     @include breakpoint (768px) {
+        margin-right: 60%;
+        margin-top: 3em;
+        width: 40%;
+    }
     
 }
 

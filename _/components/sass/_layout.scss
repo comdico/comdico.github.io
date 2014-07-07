@@ -38,15 +38,22 @@
 
 }
 .portrait {
-	@include span(1 at 1 of 4);	
+	@include span(1 of 1);	
+    @include breakpoint (580px) {
+       @include span(1 at 1 of 4);	
+        
+    }
 }
 
 #bio {margin-top:3em;}
 
 #filmmaking {
 	// font-size: 1.1rem;
-	
-	@include span(2 at 2 of 4);
+	@include span(1 of 1);
+       @include breakpoint (580px) {
+       @include span(2 at 2 of 4);	
+        
+    }
 			
 }
 #terminology {
