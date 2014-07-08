@@ -16,7 +16,7 @@
     color:whitesmoke;
       @include breakpoint (240px) {
       left: 0%;
-          top:100px;
+          top:60px;
       }
     
      @include breakpoint (767px) {
