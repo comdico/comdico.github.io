@@ -79,7 +79,16 @@ section {
 
 /* Slide 1 */
 
-#slide-1 {z-index:2000;}
+#slide-1 {
+    z-index:2000;
+
+     @include breakpoint (280px) {
+         margin-top:-50px;
+     }
+     @include breakpoint (767px) {
+        margin-top:0px;
+     }
+}
 
 #slide-1 .bcg {
     background-color:whitesmoke;
