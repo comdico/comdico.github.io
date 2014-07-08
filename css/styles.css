@@ -1555,11 +1555,27 @@ footer li {
 }
 
 /* line 19, ../_/components/sass/_modules.scss */
+.md-modal p {
+  color: whitesmoke;
+}
+
+/* line 21, ../_/components/sass/_modules.scss */
+.md-modal p a {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+/* line 27, ../_/components/sass/_modules.scss */
+.md-modal p a:hover {
+  color: #F10061;
+}
+
+/* line 33, ../_/components/sass/_modules.scss */
 .md-show {
   visibility: visible;
 }
 
-/* line 23, ../_/components/sass/_modules.scss */
+/* line 37, ../_/components/sass/_modules.scss */
 .md-overlay {
   position: fixed;
   width: 100%;
@@ -1573,32 +1589,32 @@ footer li {
   transition: all 0.3s;
 }
 
-/* line 36, ../_/components/sass/_modules.scss */
+/* line 50, ../_/components/sass/_modules.scss */
 .md-show ~ .md-overlay {
   opacity: 1;
   visibility: visible;
 }
 
 /* Effect 5: newspaper */
-/* line 42, ../_/components/sass/_modules.scss */
+/* line 56, ../_/components/sass/_modules.scss */
 .md-show.md-effect-5 ~ .md-overlay {
   background: rgba(0, 127, 108, 0.8);
 }
 
-/* line 46, ../_/components/sass/_modules.scss */
+/* line 60, ../_/components/sass/_modules.scss */
 .md-effect-5 .md-content {
   transform: scale(0) rotate(720deg);
   opacity: 0;
   transition: all 0.5s;
 }
 
-/* line 52, ../_/components/sass/_modules.scss */
+/* line 66, ../_/components/sass/_modules.scss */
 .md-show.md-effect-5 .md-content {
   transform: scale(1) rotate(0deg);
   opacity: 1;
 }
 
-/* line 61, ../_/components/sass/_modules.scss */
+/* line 75, ../_/components/sass/_modules.scss */
 div.portrait img {
   width: 8em;
   border: 0.4em solid #002b36;
@@ -1607,13 +1623,13 @@ div.portrait img {
   border-radius: 5em;
 }
 @media (min-width: 580px) {
-  /* line 61, ../_/components/sass/_modules.scss */
+  /* line 75, ../_/components/sass/_modules.scss */
   div.portrait img {
     width: 6em;
   }
 }
 @media (min-width: 768px) {
-  /* line 61, ../_/components/sass/_modules.scss */
+  /* line 75, ../_/components/sass/_modules.scss */
   div.portrait img {
     width: 9em;
   }
@@ -1899,6 +1915,31 @@ a {
 }
 
 /* line 213, ../_/components/sass/_typography.scss */
+i span:before {
+  font-family: 'fontawesome';
+  content: '\e84e';
+  margin-left: .5em;
+  font-size: 2em;
+  position: relative;
+  top: .1em;
+}
+
+/* line 222, ../_/components/sass/_typography.scss */
+.md-content i {
+  margin-left: 80%;
+}
+
+/* line 224, ../_/components/sass/_typography.scss */
+.md-content i a {
+  color: whitesmoke;
+}
+
+/* line 227, ../_/components/sass/_typography.scss */
+.md-content h3 {
+  margin-top: .5em;
+}
+
+/* line 229, ../_/components/sass/_typography.scss */
 #slide-1 .icon:before {
   position: relative;
   font-family: 'fontawesome';
@@ -1917,34 +1958,34 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 232, ../_/components/sass/_typography.scss */
+/* line 248, ../_/components/sass/_typography.scss */
 footer .icon {
   color: whitesmoke;
 }
 
-/* line 236, ../_/components/sass/_typography.scss */
+/* line 252, ../_/components/sass/_typography.scss */
 #slide-1 a.icon-about:before {
   content: '\e84d';
 }
 
-/* line 242, ../_/components/sass/_typography.scss */
+/* line 258, ../_/components/sass/_typography.scss */
 #slide-1 a.icon-pdf:before {
   content: "\e825";
   left: 1.4em;
 }
 
-/* line 249, ../_/components/sass/_typography.scss */
+/* line 265, ../_/components/sass/_typography.scss */
 a.icon-mail {
   text-align: right;
 }
 
-/* line 252, ../_/components/sass/_typography.scss */
+/* line 268, ../_/components/sass/_typography.scss */
 #slide-1 a.icon-mail:before {
   content: "\e819";
   left: 1.2em;
 }
 
-/* line 297, ../_/components/sass/_typography.scss */
+/* line 313, ../_/components/sass/_typography.scss */
 a:hover, a:hover:before {
   color: #F10061;
   -moz-transition-duration: 0.3s;
@@ -1953,74 +1994,74 @@ a:hover, a:hover:before {
   transition-duration: 0.3s;
 }
 
-/* line 302, ../_/components/sass/_typography.scss */
+/* line 318, ../_/components/sass/_typography.scss */
 #filmmaking p {
   text-align: left;
 }
 
-/* line 303, ../_/components/sass/_typography.scss */
+/* line 319, ../_/components/sass/_typography.scss */
 #filmmaking span {
   font-weight: bold;
 }
 
-/* line 305, ../_/components/sass/_typography.scss */
+/* line 321, ../_/components/sass/_typography.scss */
 #terminology p:first-child {
   color: whitesmoke;
   text-align: right;
   padding-right: 5em;
 }
 
-/* line 311, ../_/components/sass/_typography.scss */
+/* line 327, ../_/components/sass/_typography.scss */
 footer h5, footer p {
   color: whitesmoke;
 }
 
-/* line 312, ../_/components/sass/_typography.scss */
+/* line 328, ../_/components/sass/_typography.scss */
 footer p {
   font-size: .8em;
 }
 
-/* line 313, ../_/components/sass/_typography.scss */
+/* line 329, ../_/components/sass/_typography.scss */
 footer li a.icon span {
   display: none;
 }
 
-/* line 317, ../_/components/sass/_typography.scss */
+/* line 333, ../_/components/sass/_typography.scss */
 a.icon-twitter:before {
   content: "\e844";
   font-size: 3em;
 }
 
-/* line 323, ../_/components/sass/_typography.scss */
+/* line 339, ../_/components/sass/_typography.scss */
 a.icon-linkedin:before {
   content: "\e83e";
   font-size: 3em;
 }
 
-/* line 329, ../_/components/sass/_typography.scss */
+/* line 345, ../_/components/sass/_typography.scss */
 a.icon-vimeo:before {
   content: "\e846";
   font-size: 3em;
 }
 
-/* line 335, ../_/components/sass/_typography.scss */
+/* line 351, ../_/components/sass/_typography.scss */
 a.icon-flickr:before {
   content: "\e837";
   font-size: 3em;
 }
 
-/* line 341, ../_/components/sass/_typography.scss */
+/* line 357, ../_/components/sass/_typography.scss */
 a.icon-soundcloud:before {
   content: "\e84c";
   font-size: 3em;
 }
 
-/* line 349, ../_/components/sass/_typography.scss */
+/* line 365, ../_/components/sass/_typography.scss */
 #slide-4 h2 {
   color: whitesmoke;
 }
 
-/* line 350, ../_/components/sass/_typography.scss */
+/* line 366, ../_/components/sass/_typography.scss */
 #slide-5 h2, #slide-7 h2, #slide-9 h2 {
   color: #002b36;
 }

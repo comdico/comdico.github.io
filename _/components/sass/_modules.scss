@@ -15,6 +15,20 @@
     padding:3em;
     color:whitesmoke;
 }
+
+.md-modal p {color:whitesmoke;}
+
+.md-modal p a {
+    color:whitesmoke;
+    text-decoration: underline;
+    
+}
+
+.md-modal p a:hover {
+    color:#F10061;
+ 
+    
+}
  
 .md-show {
     visibility: visible;

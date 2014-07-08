@@ -210,6 +210,22 @@ a {
 // a.icon-pdf {background-color: green;}
 // a.icon-about {background-color: pink;}
 
+i span:before {
+    font-family: 'fontawesome';
+    content: '\e84e';
+    margin-left: .5em;
+    font-size: 2em;
+    position: relative;
+    top: .1em;
+}
+
+.md-content i {margin-left:80%;}
+
+.md-content i a {
+    color: whitesmoke;
+}
+.md-content h3 {margin-top:.5em;}
+
 #slide-1 .icon:before {
     position: relative;
     font-family: 'fontawesome';
