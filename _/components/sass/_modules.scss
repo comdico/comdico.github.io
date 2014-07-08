@@ -16,10 +16,12 @@
     color:whitesmoke;
       @include breakpoint (240px) {
       left: 0%;
+          top:100px;
       }
     
      @include breakpoint (767px) {
       left: 20%;
+         top: 20px;
       }
     
 }
