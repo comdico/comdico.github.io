@@ -128,9 +128,19 @@ body {
     // font-size: 2.4vw; 
     text-align: center;
     color: $second-c;
+    letter-spacing: .09em;
+}
+
+#slide-1  h5 {
+    @include breakpoint (280px) {
+    margin-top: 0em;
+    padding-top: 0;
+    }
+      @include breakpoint (420px) {
     margin-top: -1em;
     padding-top: 0;
-    letter-spacing: .09em;
+    }
+    
 }
 
 .preamble blockquote {
