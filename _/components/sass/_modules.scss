@@ -1,6 +1,7 @@
 // MODAL
 .md-modal {
     position: fixed;
+    top: 20px;
     left: 20%;
     width: 50%;
     max-width: 630px;
@@ -13,12 +14,6 @@
     background-color: $base-c;
     padding:3em;
     color:whitesmoke;
-    @include breakpoint (280px) {
-       top: 20px;
-    }
-    @include breakpoint (800px) {
-     top: 10%;   
-    }
 }
 
 .md-modal p {color:whitesmoke;}

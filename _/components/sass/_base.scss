@@ -65,9 +65,7 @@ section {
     background-size: cover;
     height: 100%;
     width: 100%;
-    @include breakpoint (800px){
-      background-attachment: fixed;
-    }
+      background-color:whitesmoke;
 }
 
 .drop {
@@ -234,5 +232,6 @@ footer {
     position: relative;
     text-align: center;
     overflow: hidden;
+   
 
 }
