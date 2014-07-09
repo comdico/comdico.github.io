@@ -25,10 +25,14 @@
       }   
 }
 
-.gt-ie10 .md-modal {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* IE10+ specific styles go here */  
+
+ .md-modal {
     top:360px;
     left:50%;
 }
+    }
 
 .md-modal p {color:whitesmoke;}
 
