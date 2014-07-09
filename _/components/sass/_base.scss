@@ -65,7 +65,13 @@ section {
     background-size: cover;
     height: 100%;
     width: 100%;
-      background-color:whitesmoke;
+    background-color:whitesmoke;
+    background-attachment: scroll;
+    
+    @include breakpoint (960px) {
+     background-attachment: fixed;
+     }
+    
 }
 
 .drop {
