@@ -22,8 +22,12 @@
      @include breakpoint (767px) {
       left: 20%;
          top: 20px;
-      }
-    
+      }   
+}
+
+.gt-ie10 .md-modal {
+    top:360px;
+    left:50%;
 }
 
 .md-modal p {color:whitesmoke;}
