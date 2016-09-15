@@ -848,7 +848,7 @@ textarea {
 }
 /* line 299, ../_/components/sass/_boilerplate.scss */
 .icon {
-  font-family: 'cdings';
+  font-family: 'Open Sans', sans-serif;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1964,12 +1964,12 @@ footer .icon {
 
 /* line 252, ../_/components/sass/_typography.scss */
 #slide-1 a.icon-about:before {
-  content: '\e84d';
+ 
 }
 
 /* line 258, ../_/components/sass/_typography.scss */
 #slide-1 a.icon-pdf:before {
-  content: "\e825";
+  
   left: 1.4em;
 }
 
@@ -1980,7 +1980,7 @@ a.icon-mail {
 
 /* line 268, ../_/components/sass/_typography.scss */
 #slide-1 a.icon-mail:before {
-  content: "\e819";
+  
   left: 1.2em;
 }
 
@@ -2065,7 +2065,7 @@ a.icon-soundcloud:before {
   color: #002b36;
 }
 
-/*
+
 @font-face {
 	font-family: 'cdings';
 	src: url('../fonts/icomoon.eot');
@@ -2076,4 +2076,4 @@ a.icon-soundcloud:before {
 	font-style: normal;
 	font-weight: normal;
 }    
-*/
+
