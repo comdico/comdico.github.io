@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Images</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Responsive Images</h1>
+
+<h2>Photoshop</h2>
+<p>This has been cropped in Photoshop.</p>
+	<div class="figure">
+		<img src="img/biz-cropped.jpg" alt="Funny, fake stock image">
+	</div>
+<hr>
+
+<h2>Original Image</h2>
+<p>This is the original image uncropped. You can see the watermark.</p>
+	<div class="figure">
+		<img src="img/biz.jpg" alt="Funny, fake stock image">
+	</div>
+<hr>
+
+<h2>Basic CSS Crop</h2>
+<p>This uses overflow: hidden to crop image. It hides the watermark but the original image is now off-center.</p>
+	<div class="figure">
+		<span class="crop">
+		<img src="img/biz.jpg" alt="Funny, fake stock image"> 
+		</span>
+	</div>
+<hr>
+
+<h2>Clip-Path Tag</h2>
+<p>This uses clip-path tag. Image is centered but not supported in IE or Edge browsers.</p>
+	<div class="figure clip-figure">
+	<span class="clip-path">
+		<img src="img/biz.jpg" alt="Funny, fake stock image">
+	</span>
+	</div>
+<hr>
+
+<!-- <h2>Picture Tag with Photoshop Crop</h2>
+<p>This uses clip-path tag. Image is centered but not supported in IE or Edge browsers.</p>
+	<div class="figure" alt="Funny, fake stock image">
+
+	</div> -->
+
+
+</body>
+</html>
