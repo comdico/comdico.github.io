@@ -1548,7 +1548,6 @@ footer li {
   z-index: 2000;
   visibility: hidden;
   backface-visibility: hidden;
-  transform: translateX(-50%) translateY(-50%);
   background-color: #002b36;
   padding: 3em;
   color: whitesmoke;
